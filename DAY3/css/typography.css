@@ -1,0 +1,15 @@
+body {
+    /* 공간초기화 */
+    margin: 0;
+    background: url("../images/leading-24px.png");
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5em; /* 16 x 1.5 =24 */
+    font-family: "Spoqa Han Sans";
+    font-size: 16px;
+    line-height: 1.5; /* 16 x 1.5 =24 */
+    letter-spacing: -0.005em;
+    color: #010101;
+}

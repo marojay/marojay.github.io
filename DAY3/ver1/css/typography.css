@@ -1,0 +1,13 @@
+body {
+    /* 공간초기화 */
+    margin: 0;
+}
+p {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    background-color: #7B11CC;
+    /* 눈에 보이지 않는 투명 외부 공간 영역 */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
