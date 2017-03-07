@@ -1,0 +1,94 @@
+/* :가상 클래스 VS ::가상요소(Pseudo Element) */
+p::selection {
+    background: #efd4c6;
+    color: #7b6d66;
+}
+
+*::selection {
+     background: #efd4c6;
+     color: #7b6d66;
+}
+
+
+body {
+    margin: 0;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-bottom: 1px solid #c2d6d1;
+}
+
+.wrapper {
+    /* widht, height 속성은 inline 요소에는 적용되지 않는다. */
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-box,
+.inline-box {
+    width: 200px;
+    height: 200px;
+    /* margin-top, margin-bottom은 inline 요소에는 적용되지 않는다 (간격이 벌어지지 않는다) */
+    margin: 20px;
+    /* border-top, border-bottom은 inline 요소에는 적용되지 않는다 (간격이 벌어지지 않는다) */
+    border: 10px solid #0995bd;
+    /* padding-top, padding-bottom은 inline 요소에는 적용되지 않는다 (간격이 벌어지지 않는다) */
+    padding: 20px;
+    background: #f3d044;
+    color: #fff;
+}
+
+.inline-block-box {
+    /* 화면 표시 방법: inline-block 변경 - 기본적으로는 inline처럼 보이지만,
+    block처럼 레이아웃 설정이 가능하다.
+    상/하 공간 설정 가능
+    width/height 설정 가능 */
+    display: inline-block;
+    background: #0995bd ;
+    color: #ffd219;
+}
+
+
+.ghost-style-link {
+    display: inline-block; /* 화면구조 모듈 */
+    margin: 20px;
+    border: 3px solid currentColor;
+    padding: 0.9375em 1.25em 0.625em; /* 15/16 , 글자크기에 상대적이기 때문에 단위는 em */
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3fb5c8;
+    transition: all 0.4s ease;
+}
+
+.ghost-style-link:hover {
+    border-color: #3fb5c8;
+    color: #fff;
+    background: #3fb5c8;
+}
+
+.album-image {
+    /* image는 width:100%를 주었을때 height:auto를 주면
+    디바이스 사이즈에 맞게 이미지가 세팅된다 */
+    /* width: 100%;
+    height: auto; */
+    margin: 5px;
+    border: 5px solid #dddddd;
+    padding: 20px;
+    background: #fff;
+    transition: border-color 340ms linear;
+}
+
+.album-image:hover {
+  border-color: #0995bd;
+}
+
+
+
+

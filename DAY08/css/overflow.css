@@ -1,0 +1,38 @@
+html {
+    /* 최신브라우저,구형브라우저 모두 y축이 흔들리는것을 방지하기 위한 설정 */
+    overflow-y: scroll;
+}
+
+
+
+.demo {
+    width: 500px;
+    height: 340px;
+    margin: 1em auto;
+    border: 5px solid #ddd;
+    padding: 1em;
+}
+
+.o-visible {
+    overflow: visible;
+}
+
+.o-hidden {
+    overflow: hidden;
+}
+
+.o-scroll {
+    overflow: scroll;
+    /* overflow-x: scroll; */
+    /* overflow-y: scroll; */
+}
+
+.o-auto {
+    overflow: auto;
+}
+
+
+
+
+
+
