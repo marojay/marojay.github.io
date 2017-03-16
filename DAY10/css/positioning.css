@@ -1,0 +1,125 @@
+body {
+    margin:0;
+}
+
+.parent-box {
+    box-sizing: border-box; /* 비표준모드일때(html에 Doctype없을때) 적용가능 vh값에서 고정 border값을 빼고싶거나 예측하지못한 사이즈때문에 틀어짐을 방지하기 위함 */
+    position: relative;
+    height: 100vh; /* 브라우저 창의 높이만큼 */
+    border: 10px solid #aeaeae;
+}
+
+.box {
+    width:200px;
+    height: 180px;
+    color: #fff;
+    text-align: center;
+    line-height: 180px;
+}
+
+
+.box:nth-child(1) {
+    z-index: 20;
+    background: #7045cf;
+}
+.box:nth-child(2) {
+    z-index: 30;
+    background: #ffd219;
+}
+.box:nth-child(3) {
+    z-index: 40;
+    background: #3fb5c8;
+}
+.box:nth-child(4) {
+    z-index: 10;
+    background: #fe4940;
+}
+
+/* 박스 포지션 실습 - MJay버전 
+.target1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.target2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.target3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.target4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+*/
+
+
+.vertex-lt {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.vertex-rt {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.vertex-lb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.vertex-rb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.center-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+.target {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.target::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid #2fc2e0;
+}
+
+
+.target:hover::after {
+    position: relative;
+}
+
+
+
